@@ -1,52 +1,20 @@
-EESchema Schematic File Version 2
-LIBS:RAMPS-FD-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:RMC
-LIBS:RAMPS-FD-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2016-07-17"
-Rev "v2.2"
+Date "2019-04-13"
+Rev "v2.3"
 Comp ""
-Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Bob Cousins 2016"
+Comment3 "Marius Krause 2019"
 Comment4 ""
 $EndDescr
 $Comp
-L VCC #PWR045
+L power:VCC #PWR045
 U 1 1 523A3B4A
 P 6200 1200
 F 0 "#PWR045" H 6200 1050 50  0001 C CNN
@@ -57,7 +25,7 @@ F 3 "" H 6200 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_PACK4 RP1
+L RAMPS-FD-rescue:R_PACK4 RP1
 U 1 1 523A3B30
 P 6450 6900
 F 0 "RP1" H 6450 7350 40  0000 C CNN
@@ -68,7 +36,7 @@ F 3 "" H 6450 6900 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_PACK4 RP3
+L RAMPS-FD-rescue:R_PACK4 RP3
 U 1 1 523A3B2E
 P 7250 1700
 F 0 "RP3" H 7250 2150 40  0000 C CNN
@@ -79,7 +47,7 @@ F 3 "" H 7250 1700 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_PACK4 RP2
+L RAMPS-FD-rescue:R_PACK4 RP2
 U 1 1 523A3B27
 P 6550 1700
 F 0 "RP2" H 6550 2150 40  0000 C CNN
@@ -96,7 +64,7 @@ FET4_BUF
 Text GLabel 7650 4350 2    60   Output ~ 0
 D10_BUF
 $Comp
-L GND #PWR049
+L power:GND #PWR049
 U 1 1 523A374A
 P 3700 7600
 AR Path="/523A374A" Ref="#PWR049"  Part="1" 
@@ -113,7 +81,7 @@ D11-FET4
 Text GLabel 3000 4350 0    60   Input ~ 0
 D10
 $Comp
-L 74LS125 U1
+L RAMPS-FD-rescue:74LS125 U1
 U 1 1 523A36ED
 P 4850 6450
 F 0 "U1" H 4850 6550 50  0000 L BNN
@@ -124,7 +92,7 @@ F 3 "" H 4850 6450 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L 74LS125 U1
+L RAMPS-FD-rescue:74LS125 U1
 U 4 1 523A36EC
 P 4900 5700
 F 0 "U1" H 4900 5800 50  0000 L BNN
@@ -135,7 +103,7 @@ F 3 "" H 4900 5700 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L 74LS125 U1
+L RAMPS-FD-rescue:74LS125 U1
 U 3 1 523A36E7
 P 4900 5100
 F 0 "U1" H 4900 5200 50  0000 L BNN
@@ -146,7 +114,7 @@ F 3 "" H 4900 5100 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L 74LS125 U1
+L RAMPS-FD-rescue:74LS125 U1
 U 2 1 523A36E3
 P 4900 4350
 F 0 "U1" H 4900 4450 50  0000 L BNN
@@ -157,7 +125,7 @@ F 3 "" H 4900 4350 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L 74LS244 U2
+L RAMPS-FD-rescue:74LS244 U2
 U 1 1 523A33CC
 P 5100 2800
 F 0 "U2" H 5150 2600 60  0000 C CNN
@@ -168,7 +136,7 @@ F 3 "" H 5100 2800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR047
+L power:VCC #PWR047
 U 1 1 51E4F650
 P 10650 900
 F 0 "#PWR047" H 10650 750 50  0001 C CNN
@@ -179,7 +147,7 @@ F 3 "" H 10650 900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR051
+L power:GND #PWR051
 U 1 1 51E4F64F
 P 10650 1700
 AR Path="/51E4F64F" Ref="#PWR051"  Part="1" 
@@ -192,7 +160,7 @@ F 3 "" H 10650 1700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L RAMPS-FD-rescue:C C2
 U 1 1 51E4F64E
 P 10650 1300
 AR Path="/51E4F64E" Ref="C2"  Part="1" 
@@ -205,7 +173,7 @@ F 3 "" H 10650 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L RAMPS-FD-rescue:C C1
 U 1 1 51E4F640
 P 10100 1300
 AR Path="/51E4F640" Ref="C1"  Part="1" 
@@ -218,7 +186,7 @@ F 3 "" H 10100 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR052
+L power:GND #PWR052
 U 1 1 51E4F630
 P 10100 1700
 AR Path="/51E4F630" Ref="#PWR052"  Part="1" 
@@ -231,7 +199,7 @@ F 3 "" H 10100 1700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR050
+L power:VCC #PWR050
 U 1 1 51E4F62B
 P 10100 900
 F 0 "#PWR050" H 10100 750 50  0001 C CNN
@@ -250,7 +218,7 @@ D9
 Text GLabel 3150 2900 0    60   Input ~ 0
 D8
 $Comp
-L D D301
+L RAMPS-FD-rescue:D D301
 U 1 1 51B65AB0
 P 1900 1600
 F 0 "D301" H 1900 1700 40  0000 C CNN
@@ -261,7 +229,7 @@ F 3 "" H 1900 1600 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R305
+L RAMPS-FD-rescue:R R305
 U 1 1 51B4ECD2
 P 1300 2050
 AR Path="/51B4ECD2" Ref="R305"  Part="1" 
@@ -274,7 +242,7 @@ F 3 "" H 1300 2050 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR051
+L RMC:+V_LOGIC #PWR051
 U 1 1 51B4EC55
 P 1550 1000
 F 0 "#PWR051" H 1550 970 30  0001 C CNN
@@ -285,7 +253,7 @@ F 3 "" H 1550 1000 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_2 P302
+L RAMPS-FD-rescue:CONN_2 P302
 U 1 1 51B4EBF7
 P 800 1700
 F 0 "P302" V 750 1700 40  0000 C CNN
@@ -296,7 +264,7 @@ F 3 "" H 800 1700 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R304
+L RAMPS-FD-rescue:R R304
 U 1 1 51B4EBD5
 P 1550 1250
 AR Path="/51B4EBD5" Ref="R304"  Part="1" 
@@ -309,7 +277,7 @@ F 3 "" H 1550 1250 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR055
+L power:GND #PWR055
 U 1 1 51B4EBC7
 P 1300 2350
 AR Path="/51B4EBC7" Ref="#PWR055"  Part="1" 
@@ -362,7 +330,7 @@ Active low
 Text Notes 8750 4800 0    80   ~ 0
 Active high
 $Comp
-L R R401
+L RAMPS-FD-rescue:R R401
 U 1 1 52B0D0FC
 P 3400 3650
 AR Path="/52B0D0FC" Ref="R401"  Part="1" 
@@ -375,7 +343,7 @@ F 3 "" H 3400 3650 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R402
+L RAMPS-FD-rescue:R R402
 U 1 1 52B0D109
 P 3700 3650
 AR Path="/52B0D109" Ref="R402"  Part="1" 
@@ -388,7 +356,7 @@ F 3 "" H 3700 3650 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR056
+L power:GND #PWR056
 U 1 1 52B0D127
 P 3700 4150
 AR Path="/52B0D127" Ref="#PWR056"  Part="1" 
@@ -401,7 +369,7 @@ F 3 "" H 3700 4150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR057
+L power:GND #PWR057
 U 1 1 52B224D5
 P 7500 1550
 AR Path="/52B224D5" Ref="#PWR057"  Part="1" 
@@ -414,7 +382,7 @@ F 3 "" H 7500 1550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_PACK4 RP401
+L RAMPS-FD-rescue:R_PACK4 RP401
 U 1 1 52B22857
 P 3850 6950
 F 0 "RP401" H 3850 7400 40  0000 C CNN
@@ -425,7 +393,7 @@ F 3 "" H 3850 6950 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR058
+L power:GND #PWR058
 U 1 1 52B22A39
 P 6300 7550
 AR Path="/52B22A39" Ref="#PWR058"  Part="1" 
@@ -660,7 +628,7 @@ Wire Wire Line
 Wire Notes Line
 	825  1450 825  775 
 $Comp
-L LED-RESCUE-RAMPS-FD D1
+L RAMPS-FD-rescue:LED-RESCUE-RAMPS-FD D1
 U 1 1 5725588E
 P 1450 4850
 F 0 "D1" H 1450 4950 50  0000 C CNN
@@ -671,7 +639,7 @@ F 3 "" H 1450 4850 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR056
+L power:GND #PWR056
 U 1 1 572566C5
 P 1450 5775
 F 0 "#PWR056" H 1450 5775 30  0001 C CNN
@@ -682,7 +650,7 @@ F 3 "" H 1450 5775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L RAMPS-FD-rescue:R R3
 U 1 1 572566D2
 P 1450 4425
 F 0 "R3" V 1530 4425 50  0000 C CNN
@@ -693,7 +661,7 @@ F 3 "" H 1450 4425 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR057
+L power:+5V #PWR057
 U 1 1 572566D9
 P 1450 4200
 F 0 "#PWR057" H 1450 4050 50  0001 C CNN
@@ -704,7 +672,7 @@ F 3 "" H 1450 4200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOSFET_N Q1
+L RMC:MOSFET_N Q1
 U 1 1 572566DF
 P 1375 5425
 F 0 "Q1" H 1375 5625 60  0000 R CNN

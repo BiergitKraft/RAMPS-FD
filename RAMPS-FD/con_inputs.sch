@@ -1,48 +1,16 @@
-EESchema Schematic File Version 2
-LIBS:RAMPS-FD-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:RMC
-LIBS:RAMPS-FD-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2016-07-17"
-Rev "v2.2"
+Date "2019-04-13"
+Rev "v2.3"
 Comp ""
-Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Bob Cousins 2016"
+Comment3 "Marius Krause 2019"
 Comment4 ""
 $EndDescr
 Wire Wire Line
@@ -76,7 +44,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 3750 3300 3750
 $Comp
-L +V_LOGIC #PWR0103
+L RMC:+V_LOGIC #PWR0103
 U 1 1 517866F1
 P 4250 2700
 F 0 "#PWR0103" H 4250 2670 30  0001 C CNN
@@ -87,7 +55,7 @@ F 3 "" H 4250 2700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR0104
+L RMC:+V_LOGIC #PWR0104
 U 1 1 517866E5
 P 4900 2200
 F 0 "#PWR0104" H 4900 2170 30  0001 C CNN
@@ -98,7 +66,7 @@ F 3 "" H 4900 2200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0106
+L power:GND #PWR0106
 U 1 1 510D87E0
 P 4900 2800
 AR Path="/510D87E0" Ref="#PWR0106"  Part="1" 
@@ -111,7 +79,7 @@ F 3 "" H 4900 2800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C305
+L RAMPS-FD-rescue:C C305
 U 1 1 510D87AD
 P 4900 2500
 AR Path="/510D87AD" Ref="C305"  Part="1" 
@@ -124,7 +92,7 @@ F 3 "" H 4900 2500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0106
+L power:+5V #PWR0106
 U 1 1 50FF1A76
 P 800 1800
 F 0 "#PWR0106" H 800 1650 50  0001 C CNN
@@ -135,7 +103,7 @@ F 3 "" H 800 1800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0108
+L power:GND #PWR0108
 U 1 1 50FF1A09
 P 4250 5100
 AR Path="/50FF1A09" Ref="#PWR0108"  Part="1" 
@@ -164,7 +132,7 @@ X-MAX
 Text GLabel 5050 4400 2    50   Output ~ 0
 X-MIN
 $Comp
-L GND #PWR0109
+L power:GND #PWR0109
 U 1 1 50FC388F
 P 700 4500
 AR Path="/50FC388F" Ref="#PWR0109"  Part="1" 
@@ -177,7 +145,7 @@ F 3 "" H 700 4500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4050_RMC U801
+L RMC:4050_RMC U801
 U 1 1 5244B8CC
 P 4450 3150
 F 0 "U801" H 4450 1600 60  0000 C CNN
@@ -188,7 +156,7 @@ F 3 "~" H 4450 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_PACK4 RP801
+L RAMPS-FD-rescue:R_PACK4 RP801
 U 1 1 524E0304
 P 2550 2050
 F 0 "RP801" H 2550 2500 40  0000 C CNN
@@ -217,7 +185,7 @@ Wire Wire Line
 	2300 1850 2300 1650
 Connection ~ 2300 1650
 $Comp
-L R_PACK4 RP802
+L RAMPS-FD-rescue:R_PACK4 RP802
 U 1 1 524E0589
 P 3200 2050
 F 0 "RP802" H 3200 2500 40  0000 C CNN
@@ -230,7 +198,7 @@ $EndComp
 NoConn ~ 3150 2250
 NoConn ~ 2200 2250
 $Comp
-L +5V #PWR0109
+L power:+5V #PWR0109
 U 1 1 524E05B1
 P 2100 1100
 F 0 "#PWR0109" H 2100 950 50  0001 C CNN
@@ -241,7 +209,7 @@ F 3 "" H 2100 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L JUMP_MINI JP801
+L RMC:JUMP_MINI JP801
 U 1 1 524E05B9
 P 2350 1350
 F 0 "JP801" H 2350 1275 60  0000 C CNN
@@ -276,7 +244,7 @@ Wire Wire Line
 	3150 1650 3150 1850
 Connection ~ 3050 1650
 $Comp
-L CONN_6X2 P802
+L RAMPS-FD-rescue:CONN_6X2 P802
 U 1 1 52B20629
 P 1350 3800
 F 0 "P802" H 1350 4150 60  0000 C CNN
@@ -287,7 +255,7 @@ F 3 "" H 1350 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_6 P801
+L RAMPS-FD-rescue:CONN_6 P801
 U 1 1 52B20647
 P 1350 2550
 F 0 "P801" V 1300 2550 60  0000 C CNN

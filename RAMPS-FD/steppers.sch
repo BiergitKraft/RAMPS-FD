@@ -1,64 +1,32 @@
-EESchema Schematic File Version 2
-LIBS:RAMPS-FD-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:RMC
-LIBS:RAMPS-FD-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2016-07-17"
-Rev "v2.2"
+Date "2019-04-13"
+Rev "v2.3"
 Comp ""
-Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Bob Cousins 2016"
+Comment3 "Marius Krause 2019"
 Comment4 ""
 $EndDescr
 Wire Wire Line
 	5550 700  5550 650 
 Wire Wire Line
-	5000 6600 5750 6600
+	6500 6500 6700 6500
 Wire Wire Line
-	5000 6400 5750 6400
-Connection ~ 2550 6500
-Connection ~ 5250 6000
-Connection ~ 5300 7450
+	6500 6300 6700 6300
+Connection ~ 4050 6400
+Connection ~ 6750 5900
+Connection ~ 6800 7350
 Wire Wire Line
-	5300 6900 5300 7600
+	6800 6800 6800 7350
 Connection ~ 7450 3650
 Wire Wire Line
-	7500 4550 7500 5150
+	7500 4550 7500 5100
 Connection ~ 4650 4150
 Wire Wire Line
 	4650 4150 4650 4750
@@ -70,7 +38,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 3450 7450 3650
 Wire Wire Line
-	7200 3650 8100 3650
+	7200 3650 7450 3650
 Wire Wire Line
 	7500 4150 7200 4150
 Wire Wire Line
@@ -84,13 +52,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 4250 7500 4250
 Wire Wire Line
-	2650 2200 5900 2200
-Wire Wire Line
 	5900 1700 5800 1700
-Wire Wire Line
-	3700 2000 5900 2000
-Wire Wire Line
-	2650 1800 5900 1800
 Wire Wire Line
 	7200 1900 7500 1900
 Wire Wire Line
@@ -104,8 +66,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 1100 7450 1300
 Connection ~ 5550 700 
-Wire Wire Line
-	2900 1900 5900 1900
 Wire Wire Line
 	5800 1600 5900 1600
 Wire Wire Line
@@ -122,67 +82,55 @@ Wire Wire Line
 	4900 4650 5900 4650
 Wire Wire Line
 	5850 3950 5900 3950
-Wire Wire Line
-	2600 4250 5900 4250
 Connection ~ 5550 3250
 Wire Wire Line
 	5550 3250 5550 3200
 Wire Wire Line
 	5800 3750 5900 3750
 Wire Wire Line
-	2600 4150 5900 4150
-Wire Wire Line
-	4000 4350 5900 4350
-Wire Wire Line
 	5900 4050 5850 4050
 Wire Wire Line
-	5300 6900 5000 6900
+	6800 6800 6500 6800
 Wire Wire Line
-	5000 7000 6500 7000
+	6500 6900 8000 6900
 Wire Wire Line
-	5000 6000 6500 6000
+	6500 5900 6750 5900
 Wire Wire Line
-	5250 5800 5250 6000
+	6750 5700 6750 5900
 Wire Wire Line
-	3700 6400 3650 6400
+	5200 6300 5150 6300
 Wire Wire Line
-	2000 6700 3700 6700
+	5150 6000 5200 6000
 Wire Wire Line
-	1400 6500 3700 6500
+	4850 5400 4850 5450
+Connection ~ 4850 5450
 Wire Wire Line
-	3650 6100 3700 6100
+	5150 6200 5200 6200
 Wire Wire Line
-	3350 5500 3350 5550
-Connection ~ 3350 5550
+	5200 5900 5100 5900
 Wire Wire Line
-	1400 6600 3700 6600
+	5100 5900 5100 5450
 Wire Wire Line
-	3650 6300 3700 6300
-Wire Wire Line
-	3700 6000 3600 6000
-Wire Wire Line
-	3600 6000 3600 5550
-Wire Wire Line
-	3600 5550 2100 5550
+	5100 5450 4850 5450
 Wire Wire Line
 	8100 1300 8100 1600
 Wire Wire Line
-	7200 1300 8100 1300
+	7200 1300 7450 1300
 Connection ~ 7450 1300
 Wire Wire Line
 	8100 3650 8100 3950
 Wire Wire Line
 	8100 4650 8100 4250
 Wire Wire Line
-	6500 7000 6500 6600
+	8000 6900 8000 6500
 Wire Wire Line
-	6500 6000 6500 6300
+	8000 5900 8000 6200
 Wire Wire Line
 	4650 2700 4650 2750
 Wire Wire Line
 	4650 2750 7500 2750
 Wire Wire Line
-	7500 2200 7500 2800
+	7500 2200 7500 2750
 Wire Wire Line
 	7500 5100 4650 5100
 Wire Wire Line
@@ -192,30 +140,28 @@ Wire Wire Line
 	4650 2400 4650 1800
 Connection ~ 4650 1800
 Wire Wire Line
-	2550 7300 2550 7450
+	4050 7200 4050 7350
 Wire Wire Line
-	2550 7000 2550 6500
+	4050 6900 4050 6400
 Wire Wire Line
-	2550 7450 5300 7450
+	4050 7350 6800 7350
 Wire Wire Line
-	5000 6300 5750 6300
+	6500 6200 6700 6200
 Wire Wire Line
-	5000 6500 5750 6500
+	6500 6400 6700 6400
 Wire Wire Line
 	5800 1400 5900 1400
-Text GLabel 3650 6100 0    60   Input ~ 0
+Text GLabel 5150 6000 0    60   Input ~ 0
 /Z_EN_BUF
 Text GLabel 5800 3750 0    60   Input ~ 0
 /Y_EN_BUF
-Text GLabel 5800 1400 0    50   Input ~ 0
-/X_EN_BUF
-Text Label 5050 6600 0    40   ~ 0
+Text Label 6550 6500 0    40   ~ 0
 Z-1B
-Text Label 5050 6500 0    40   ~ 0
+Text Label 6550 6400 0    40   ~ 0
 Z-1A
-Text Label 5050 6400 0    40   ~ 0
+Text Label 6550 6300 0    40   ~ 0
 Z-2A
-Text Label 5050 6300 0    40   ~ 0
+Text Label 6550 6200 0    40   ~ 0
 Z-2B
 Text Label 7250 4250 0    40   ~ 0
 Y-1B
@@ -233,25 +179,25 @@ Text Label 7250 1700 0    40   ~ 0
 X-2A
 Text Label 7250 1600 0    40   ~ 0
 X-2B
-Text GLabel 6100 7000 2    50   UnSpc ~ 0
+Text GLabel 7600 6900 2    50   UnSpc ~ 0
 MOT_GND
 Text GLabel 7650 4650 2    50   UnSpc ~ 0
 MOT_GND
 Text GLabel 7650 2300 2    50   UnSpc ~ 0
 MOT_GND
 $Comp
-L +V_LOGIC #PWR036
+L RMC:+V_LOGIC #PWR036
 U 1 1 51786671
-P 3350 5500
-F 0 "#PWR036" H 3350 5470 30  0001 C CNN
-F 1 "+V_LOGIC" H 3350 5600 30  0000 C CNN
-F 2 "" H 3350 5500 60  0001 C CNN
-F 3 "" H 3350 5500 60  0001 C CNN
-	1    3350 5500
+P 4850 5400
+F 0 "#PWR036" H 4850 5370 30  0001 C CNN
+F 1 "+V_LOGIC" H 4850 5500 30  0000 C CNN
+F 2 "" H 4850 5400 60  0001 C CNN
+F 3 "" H 4850 5400 60  0001 C CNN
+	1    4850 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR037
+L RMC:+V_LOGIC #PWR037
 U 1 1 51786662
 P 5550 3200
 F 0 "#PWR037" H 5550 3170 30  0001 C CNN
@@ -262,7 +208,7 @@ F 3 "" H 5550 3200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR038
+L RMC:+V_LOGIC #PWR038
 U 1 1 5178664A
 P 5550 650
 F 0 "#PWR038" H 5550 620 30  0001 C CNN
@@ -273,18 +219,18 @@ F 3 "" H 5550 650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_MOTOR #PWR039
+L RMC:+V_MOTOR #PWR039
 U 1 1 5176ECF3
-P 5250 5800
-F 0 "#PWR039" H 5250 5770 30  0001 C CNN
-F 1 "+V_MOTOR" H 5250 5900 30  0000 C CNN
-F 2 "" H 5250 5800 60  0001 C CNN
-F 3 "" H 5250 5800 60  0001 C CNN
-	1    5250 5800
+P 6750 5700
+F 0 "#PWR039" H 6750 5670 30  0001 C CNN
+F 1 "+V_MOTOR" H 6750 5800 30  0000 C CNN
+F 2 "" H 6750 5700 60  0001 C CNN
+F 3 "" H 6750 5700 60  0001 C CNN
+	1    6750 5700
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_MOTOR #PWR040
+L RMC:+V_MOTOR #PWR040
 U 1 1 5176ECF1
 P 7450 3450
 F 0 "#PWR040" H 7450 3420 30  0001 C CNN
@@ -295,7 +241,7 @@ F 3 "" H 7450 3450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_MOTOR #PWR041
+L RMC:+V_MOTOR #PWR041
 U 1 1 5176ECE5
 P 7450 1100
 F 0 "#PWR041" H 7450 1070 30  0001 C CNN
@@ -306,20 +252,20 @@ F 3 "" H 7450 1100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R201
+L RAMPS-FD-rescue:R R201
 U 1 1 50FC333E
-P 2550 7150
+P 4050 7050
 AR Path="/50FC333E" Ref="R201"  Part="1" 
 AR Path="/50FC2853/50FC333E" Ref="R201"  Part="1" 
-F 0 "R201" V 2630 7150 50  0000 C CNN
-F 1 "100k" V 2550 7150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2550 7150 60  0001 C CNN
-F 3 "" H 2550 7150 60  0001 C CNN
-	1    2550 7150
+F 0 "R201" V 4130 7050 50  0000 C CNN
+F 1 "100k" V 4050 7050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 4050 7050 60  0001 C CNN
+F 3 "" H 4050 7050 60  0001 C CNN
+	1    4050 7050
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R203
+L RAMPS-FD-rescue:R R203
 U 1 1 50FC3316
 P 4650 4900
 AR Path="/50FC3316" Ref="R203"  Part="1" 
@@ -332,7 +278,7 @@ F 3 "" H 4650 4900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR045
+L power:GND #PWR045
 U 1 1 50FC3315
 P 7500 5150
 AR Path="/50FC3315" Ref="#PWR045"  Part="1" 
@@ -345,7 +291,7 @@ F 3 "" H 7500 5150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR046
+L power:GND #PWR046
 U 1 1 50FC32E4
 P 7500 2800
 AR Path="/50FC32E4" Ref="#PWR046"  Part="1" 
@@ -358,7 +304,7 @@ F 3 "" H 7500 2800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R202
+L RAMPS-FD-rescue:R R202
 U 1 1 50FC32C0
 P 4650 2550
 AR Path="/50FC32C0" Ref="R202"  Part="1" 
@@ -371,20 +317,20 @@ F 3 "" H 4650 2550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C203
+L RAMPS-FD-rescue:CP1 C203
 U 1 1 50FC32B3
-P 6500 6450
+P 8000 6350
 AR Path="/50FC32B3" Ref="C203"  Part="1" 
 AR Path="/50FC2853/50FC32B3" Ref="C203"  Part="1" 
-F 0 "C203" H 6550 6550 50  0000 L CNN
-F 1 "100u 35V" H 6550 6350 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_6.3x7.7" H 6500 6450 60  0001 C CNN
-F 3 "" H 6500 6450 60  0001 C CNN
-	1    6500 6450
+F 0 "C203" H 8050 6450 50  0000 L CNN
+F 1 "100u 35V" H 8050 6250 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x7.7" H 8000 6350 60  0001 C CNN
+F 3 "" H 8000 6350 60  0001 C CNN
+	1    8000 6350
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C202
+L RAMPS-FD-rescue:CP1 C202
 U 1 1 50FC32B0
 P 8100 4100
 AR Path="/50FC32B0" Ref="C202"  Part="1" 
@@ -397,7 +343,7 @@ F 3 "" H 8100 4100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C201
+L RAMPS-FD-rescue:CP1 C201
 U 1 1 50FC3200
 P 8100 1750
 AR Path="/50FC3200" Ref="C201"  Part="1" 
@@ -409,62 +355,40 @@ F 3 "" H 8100 1750 60  0001 C CNN
 	1    8100 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 3650 6400 0    50   Input ~ 0
+Text GLabel 5150 6300 0    50   Input ~ 0
 Z_DIR
-Text GLabel 3650 6300 0    50   Input ~ 0
+Text GLabel 5150 6200 0    50   Input ~ 0
 Z_STEP
 $Comp
-L CONN_3X2 P202
-U 1 1 50FC2B85
-P 2150 6050
-F 0 "P202" H 2150 6300 50  0000 C CNN
-F 1 "3 2 1" V 2150 6100 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2150 6050 60  0001 C CNN
-F 3 "" H 2150 6050 60  0001 C CNN
-	1    2150 6050
-	0    1    1    0   
-$EndComp
-$Comp
-L CONN_4 P206
+L RAMPS-FD-rescue:CONN_4 P206
 U 1 1 50FC2B7B
-P 5550 6450
-F 0 "P206" V 5500 6450 50  0000 C CNN
-F 1 "Z1" V 5600 6450 50  0000 C CNN
-F 2 "rmc:CONN_KK_2.54_4W" H 5550 6450 60  0001 C CNN
-F 3 "" H 5550 6450 60  0001 C CNN
-	1    5550 6450
+P 7050 6350
+F 0 "P206" V 7000 6350 50  0000 C CNN
+F 1 "Z1" V 7100 6350 50  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_4W" H 7050 6350 60  0001 C CNN
+F 3 "" H 7050 6350 60  0001 C CNN
+	1    7050 6350
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR047
+L power:GND #PWR047
 U 1 1 50FC2B7A
-P 5300 7600
+P 6800 7500
 AR Path="/50FC2B7A" Ref="#PWR047"  Part="1" 
 AR Path="/50FC2853/50FC2B7A" Ref="#PWR044"  Part="1" 
-F 0 "#PWR044" H 5300 7600 30  0001 C CNN
-F 1 "GND" H 5300 7530 30  0001 C CNN
-F 2 "" H 5300 7600 60  0001 C CNN
-F 3 "" H 5300 7600 60  0001 C CNN
-	1    5300 7600
+F 0 "#PWR044" H 6800 7500 30  0001 C CNN
+F 1 "GND" H 6800 7430 30  0001 C CNN
+F 2 "" H 6800 7500 60  0001 C CNN
+F 3 "" H 6800 7500 60  0001 C CNN
+	1    6800 7500
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_3X2 P201
-U 1 1 50FC2B31
-P 4250 3700
-F 0 "P201" H 4250 3950 50  0000 C CNN
-F 1 "3 2 1" V 4250 3750 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4250 3700 60  0001 C CNN
-F 3 "" H 4250 3700 60  0001 C CNN
-	1    4250 3700
-	0    1    1    0   
 $EndComp
 Text GLabel 5850 3950 0    50   Input ~ 0
 Y_STEP
 Text GLabel 5850 4050 0    50   Input ~ 0
 Y_DIR
 $Comp
-L CONN_4 P205
+L RAMPS-FD-rescue:CONN_4 P205
 U 1 1 50FC2B09
 P 7850 4100
 F 0 "P205" V 7800 4100 50  0000 C CNN
@@ -475,7 +399,7 @@ F 3 "" H 7850 4100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_4 P204
+L RAMPS-FD-rescue:CONN_4 P204
 U 1 1 50FC2A06
 P 7850 1750
 F 0 "P204" V 7800 1750 50  0000 C CNN
@@ -490,29 +414,18 @@ X_DIR
 Text GLabel 5800 1600 0    50   Input ~ 0
 X_STEP
 $Comp
-L CONN_3X2 P203
-U 1 1 50FC294D
-P 4400 1300
-F 0 "P203" H 4400 1550 50  0000 C CNN
-F 1 "3 2 1" V 4400 1350 40  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4400 1300 60  0001 C CNN
-F 3 "" H 4400 1300 60  0001 C CNN
-	1    4400 1300
-	0    1    1    0   
-$EndComp
-$Comp
-L POLOLU U203
+L RMC:POLOLU U203
 U 1 1 50FC2880
-P 4350 6500
-F 0 "U203" H 4050 7100 60  0000 C CNN
-F 1 "Z" H 4150 5850 60  0000 C CNN
-F 2 "rmc:POLOLU" H 4350 6500 60  0001 C CNN
-F 3 "" H 4350 6500 60  0001 C CNN
-	1    4350 6500
+P 5850 6400
+F 0 "U203" H 5550 7000 60  0000 C CNN
+F 1 "Z" H 5650 5750 60  0000 C CNN
+F 2 "rmc:POLOLU" H 5850 6400 60  0001 C CNN
+F 3 "" H 5850 6400 60  0001 C CNN
+	1    5850 6400
 	1    0    0    -1  
 $EndComp
 $Comp
-L POLOLU U202
+L RMC:POLOLU U202
 U 1 1 50FC287F
 P 6550 4150
 F 0 "U202" H 6250 4750 60  0000 C CNN
@@ -523,7 +436,7 @@ F 3 "" H 6550 4150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POLOLU U201
+L RMC:POLOLU U201
 U 1 1 50FC2876
 P 6550 1800
 F 0 "U201" H 6550 2400 60  0000 C CNN
@@ -534,46 +447,30 @@ F 3 "" H 6650 1800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_4 P3
+L RAMPS-FD-rescue:CONN_4 P3
 U 1 1 571CE482
-P 6100 6450
-F 0 "P3" V 6050 6450 50  0000 C CNN
-F 1 "Z2" V 6150 6450 50  0000 C CNN
-F 2 "rmc:CONN_KK_2.54_4W" H 6100 6450 60  0001 C CNN
-F 3 "" H 6100 6450 60  0001 C CNN
-	1    6100 6450
+P 7600 6350
+F 0 "P3" V 7550 6350 50  0000 C CNN
+F 1 "Z2" V 7650 6350 50  0000 C CNN
+F 2 "rmc:CONN_KK_2.54_4W" H 7600 6350 60  0001 C CNN
+F 3 "" H 7600 6350 60  0001 C CNN
+	1    7600 6350
 	1    0    0    -1  
 $EndComp
-Connection ~ 5200 6300
-Connection ~ 5200 6400
-Connection ~ 5200 6500
-Connection ~ 5200 6600
-Text GLabel 1850 2000 0    50   Input ~ 0
+Connection ~ 6700 6200
+Connection ~ 6700 6300
+Connection ~ 6700 6400
+Connection ~ 6700 6500
+Text GLabel 1650 1900 0    50   Input ~ 0
 D52-SCK
-Text GLabel 1850 2100 0    50   Output ~ 0
+Text GLabel 1650 2100 0    50   Output ~ 0
 D50-MISO
-Text GLabel 1850 1900 0    50   Input ~ 0
+Text GLabel 1650 1800 0    50   Input ~ 0
 D51-MOSI
 Wire Wire Line
-	4550 1800 4550 1700
-Wire Wire Line
-	4450 1900 4450 1700
-Wire Wire Line
-	4350 2000 4350 1700
-Wire Wire Line
-	4550 700  4550 900 
-Wire Wire Line
-	5800 700  4350 700 
-Wire Wire Line
-	4450 700  4450 900 
-Connection ~ 4550 700 
-Wire Wire Line
-	4350 700  4350 900 
-Connection ~ 4450 700 
-Connection ~ 4550 1800
-Connection ~ 4450 1900
+	5800 700  5550 700 
 $Comp
-L R R4
+L RAMPS-FD-rescue:R R4
 U 1 1 5B11FBA4
 P 4950 1300
 F 0 "R4" V 5030 1300 50  0000 C CNN
@@ -583,52 +480,17 @@ F 3 "" H 4950 1300 60  0001 C CNN
 	1    4950 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R5
-U 1 1 5B11FC0D
-P 5150 1300
-F 0 "R5" V 5230 1300 50  0000 C CNN
-F 1 "10k" V 5150 1300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 5150 1300 60  0001 C CNN
-F 3 "" H 5150 1300 60  0001 C CNN
-	1    5150 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 2200 5150 1450
 Wire Wire Line
 	4950 2300 4950 1450
 Wire Wire Line
 	4950 1150 4950 700 
 Connection ~ 4950 700 
-Wire Wire Line
-	5150 1150 5150 700 
-Connection ~ 5150 700 
-Connection ~ 5150 2200
-Connection ~ 4350 2000
-$Comp
-L CONN_02X03 J3
-U 1 1 5B120CAE
-P 2100 2000
-F 0 "J3" H 2100 2200 50  0000 C CNN
-F 1 "CONN_02X03" H 2100 1800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2100 800 50  0001 C CNN
-F 3 "" H 2100 800 50  0001 C CNN
-	1    2100 2000
-	1    0    0    -1  
-$EndComp
 Text Notes 1450 1700 0    60   ~ 0
 Add jumpers for TMC2130 SPI
-Text GLabel 3700 2000 0    50   Input ~ 0
+Text GLabel 1650 2000 0    50   Input ~ 0
 STEP_X_CS
 Wire Wire Line
-	4400 4150 4400 4100
-Wire Wire Line
-	4300 4250 4300 4100
-Wire Wire Line
-	4200 4350 4200 4100
-Wire Wire Line
-	4200 3250 5800 3250
+	4200 3250 4300 3250
 Wire Wire Line
 	4400 3250 4400 3300
 Wire Wire Line
@@ -638,7 +500,7 @@ Wire Wire Line
 	4200 3250 4200 3300
 Connection ~ 4300 3250
 $Comp
-L R R6
+L RAMPS-FD-rescue:R R6
 U 1 1 5B12C4F2
 P 4900 3700
 F 0 "R6" V 4980 3700 50  0000 C CNN
@@ -648,147 +510,258 @@ F 3 "" H 4900 3700 60  0001 C CNN
 	1    4900 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R8
-U 1 1 5B12C5A0
-P 5100 3700
-F 0 "R8" V 5180 3700 50  0000 C CNN
-F 1 "10k" V 5100 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 5100 3700 60  0001 C CNN
-F 3 "" H 5100 3700 60  0001 C CNN
-	1    5100 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 3550 5100 3250
-Connection ~ 5100 3250
 Wire Wire Line
 	4900 3550 4900 3250
 Connection ~ 4900 3250
 Wire Wire Line
-	3050 4550 5900 4550
-Wire Wire Line
-	5100 4550 5100 3850
-Wire Wire Line
 	4900 3850 4900 4650
-Text GLabel 4000 4350 0    50   Input ~ 0
+Text GLabel 1400 4350 0    50   Input ~ 0
 STEP_Y_CS
-Connection ~ 5100 4550
-Connection ~ 4400 4150
-Connection ~ 4300 4250
-Connection ~ 4200 4350
 Wire Wire Line
-	2300 6500 2300 6450
+	3700 5450 3700 5550
 Wire Wire Line
-	2200 6600 2200 6450
+	3800 5550 3800 5450
+Connection ~ 3800 5450
 Wire Wire Line
-	2100 6700 2100 6450
-Wire Wire Line
-	2200 5550 2200 5650
-Wire Wire Line
-	2300 5650 2300 5550
-Connection ~ 2300 5550
-Wire Wire Line
-	2100 5550 2100 5650
-Connection ~ 2200 5550
+	3600 5450 3600 5550
+Connection ~ 3700 5450
 $Comp
-L R R9
-U 1 1 5B12DC9D
-P 2900 6000
-F 0 "R9" V 2980 6000 50  0000 C CNN
-F 1 "10k" V 2900 6000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2900 6000 60  0001 C CNN
-F 3 "" H 2900 6000 60  0001 C CNN
-	1    2900 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R7
+L RAMPS-FD-rescue:R R7
 U 1 1 5B12DE37
-P 2700 6000
-F 0 "R7" V 2780 6000 50  0000 C CNN
-F 1 "10k" V 2700 6000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" H 2700 6000 60  0001 C CNN
-F 3 "" H 2700 6000 60  0001 C CNN
-	1    2700 6000
+P 4200 5900
+F 0 "R7" V 4280 5900 50  0000 C CNN
+F 1 "10k" V 4200 5900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 4200 5900 60  0001 C CNN
+F 3 "" H 4200 5900 60  0001 C CNN
+	1    4200 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 5850 2700 5550
-Connection ~ 2700 5550
+	4200 5750 4200 5450
+Connection ~ 4200 5450
 Wire Wire Line
-	2900 5850 2900 5550
-Connection ~ 2900 5550
+	4200 6050 4200 6900
 Wire Wire Line
-	1450 6900 3700 6900
-Wire Wire Line
-	2900 6900 2900 6150
-Wire Wire Line
-	2700 6150 2700 7000
-Wire Wire Line
-	2700 7000 3700 7000
-Text GLabel 2000 6700 0    50   Input ~ 0
+	4200 6900 5200 6900
+Text GLabel 1150 6600 0    50   Input ~ 0
 STEP_Z_CS
-Connection ~ 2300 6500
-Connection ~ 2200 6600
-Connection ~ 2100 6700
-Connection ~ 2900 6900
-Wire Wire Line
-	2650 1800 2650 1900
-Wire Wire Line
-	2650 1900 2350 1900
-Wire Wire Line
-	2350 2000 2900 2000
-Wire Wire Line
-	2900 2000 2900 1900
-Wire Wire Line
-	2650 2200 2650 2100
-Wire Wire Line
-	2650 2100 2350 2100
-Text GLabel 2100 4250 0    50   Input ~ 0
+Text GLabel 1400 4250 0    50   Input ~ 0
 D52-SCK
-Text GLabel 2100 4350 0    50   Output ~ 0
+Text GLabel 1400 4450 0    50   Output ~ 0
 D50-MISO
-Text GLabel 2100 4150 0    50   Input ~ 0
+Text GLabel 1400 4150 0    50   Input ~ 0
 D51-MOSI
-$Comp
-L CONN_02X03 J5
-U 1 1 5B130EC9
-P 2350 4250
-F 0 "J5" H 2350 4450 50  0000 C CNN
-F 1 "CONN_02X03" H 2350 4050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 2350 3050 50  0001 C CNN
-F 3 "" H 2350 3050 50  0001 C CNN
-	1    2350 4250
-	1    0    0    -1  
-$EndComp
 Text Notes 1700 3950 0    60   ~ 0
 Add jumpers for TMC2130 SPI
-Wire Wire Line
-	2600 4350 3050 4350
-Wire Wire Line
-	3050 4350 3050 4550
-Text GLabel 900  6600 0    50   Input ~ 0
+Text GLabel 1150 6500 0    50   Input ~ 0
 D52-SCK
-Text GLabel 900  6700 0    50   Output ~ 0
+Text GLabel 1150 6700 0    50   Output ~ 0
 D50-MISO
-Text GLabel 900  6500 0    50   Input ~ 0
+Text GLabel 1150 6400 0    50   Input ~ 0
 D51-MOSI
-$Comp
-L CONN_02X03 J4
-U 1 1 5B13142C
-P 1150 6600
-F 0 "J4" H 1150 6800 50  0000 C CNN
-F 1 "CONN_02X03" H 1150 6400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 1150 5400 50  0001 C CNN
-F 3 "" H 1150 5400 50  0001 C CNN
-	1    1150 6600
-	1    0    0    -1  
-$EndComp
-Text Notes 500  6300 0    60   ~ 0
+Text Notes 2000 6200 0    60   ~ 0
 Add jumpers for TMC2130 SPI
 Wire Wire Line
-	1450 6900 1450 6700
+	4050 6400 5200 6400
 Wire Wire Line
-	1450 6700 1400 6700
+	6750 5900 8000 5900
+Wire Wire Line
+	6800 7350 6800 7500
+Wire Wire Line
+	7450 3650 8100 3650
+Wire Wire Line
+	4650 4150 5900 4150
+Wire Wire Line
+	7500 2750 7500 2800
+Wire Wire Line
+	5550 3250 5800 3250
+Wire Wire Line
+	7450 1300 8100 1300
+Wire Wire Line
+	7500 5100 7500 5150
+Wire Wire Line
+	4650 1800 5900 1800
+Wire Wire Line
+	6700 6200 7250 6200
+Wire Wire Line
+	6700 6300 7250 6300
+Wire Wire Line
+	6700 6400 7250 6400
+Wire Wire Line
+	6700 6500 7250 6500
+Wire Wire Line
+	4400 3250 4900 3250
+Wire Wire Line
+	4300 3250 4400 3250
+Wire Wire Line
+	3800 5450 3700 5450
+Wire Wire Line
+	3700 5450 3600 5450
+Wire Wire Line
+	4200 5450 3900 5450
+Wire Wire Line
+	4350 700  4350 900 
+Wire Wire Line
+	4450 700  4350 700 
+Connection ~ 4450 700 
+Wire Wire Line
+	4450 700  4450 900 
+Wire Wire Line
+	4950 700  4650 700 
+Wire Wire Line
+	4550 700  4450 700 
+Connection ~ 4550 700 
+Wire Wire Line
+	4550 700  4550 900 
+$Comp
+L RAMPS-FD-rescue:CONN_4X2 P?
+U 1 1 5CDC2D21
+P 2050 1950
+AR Path="/52C42F11/5CDC2D21" Ref="P?"  Part="1" 
+AR Path="/50FC2853/5CDC2D21" Ref="P6"  Part="1" 
+F 0 "P6" H 2050 2200 50  0000 C CNN
+F 1 "SPI Selector" V 2050 1950 40  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 2050 1950 60  0001 C CNN
+F 3 "" H 2050 1950 60  0001 C CNN
+	1    2050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2100 2650 2100
+Wire Wire Line
+	2650 2100 2650 2200
+$Comp
+L RAMPS-FD-rescue:CONN_4X2 P?
+U 1 1 5CE4829B
+P 1800 4300
+AR Path="/52C42F11/5CE4829B" Ref="P?"  Part="1" 
+AR Path="/50FC2853/5CE4829B" Ref="P4"  Part="1" 
+F 0 "P4" H 1800 4550 50  0000 C CNN
+F 1 "SPI Selector" V 1800 4300 40  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 1800 4300 60  0001 C CNN
+F 3 "" H 1800 4300 60  0001 C CNN
+	1    1800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L RAMPS-FD-rescue:CONN_4X2 P?
+U 1 1 5CE50035
+P 1850 6550
+AR Path="/52C42F11/5CE50035" Ref="P?"  Part="1" 
+AR Path="/50FC2853/5CE50035" Ref="P5"  Part="1" 
+F 0 "P5" H 1850 6800 50  0000 C CNN
+F 1 "SPI Selector" V 1850 6550 40  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 1850 6550 60  0001 C CNN
+F 3 "" H 1850 6550 60  0001 C CNN
+	1    1850 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4450 3050 4450
+Wire Wire Line
+	3050 4450 3050 4550
+Wire Wire Line
+	1150 6400 1450 6400
+Wire Wire Line
+	1150 6500 1450 6500
+Wire Wire Line
+	1150 6600 1450 6600
+Wire Wire Line
+	1150 6700 1450 6700
+Wire Wire Line
+	2250 6800 2250 6700
+$Comp
+L RAMPS-FD-rescue:CONN_4 P?
+U 1 1 5CF68AA5
+P 4500 1250
+AR Path="/5176EFAC/5CF68AA5" Ref="P?"  Part="1" 
+AR Path="/50FC2853/5CF68AA5" Ref="P9"  Part="1" 
+F 0 "P9" V 4450 1250 50  0000 C CNN
+F 1 "Pullup Sel." V 4550 1250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4500 1250 60  0001 C CNN
+F 3 "" H 4500 1250 60  0001 C CNN
+	1    4500 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1800 4650 1800
+Wire Wire Line
+	2450 1900 5900 1900
+Wire Wire Line
+	2450 2000 5900 2000
+Text GLabel 5800 1400 0    50   Input ~ 0
+/X_EN_BUF
+Wire Wire Line
+	4950 700  5550 700 
+Wire Wire Line
+	2650 2200 5900 2200
+Wire Wire Line
+	4650 700  4650 900 
+Connection ~ 4650 700 
+Wire Wire Line
+	4650 700  4550 700 
+Connection ~ 4650 900 
+Wire Wire Line
+	4650 900  4650 950 
+$Comp
+L RAMPS-FD-rescue:CONN_4 P?
+U 1 1 5CFB9ED8
+P 4250 3650
+AR Path="/5176EFAC/5CFB9ED8" Ref="P?"  Part="1" 
+AR Path="/50FC2853/5CFB9ED8" Ref="P8"  Part="1" 
+F 0 "P8" V 4200 3650 50  0000 C CNN
+F 1 "Pullup Sel." V 4300 3650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4250 3650 60  0001 C CNN
+F 3 "" H 4250 3650 60  0001 C CNN
+	1    4250 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3300 4100 3250
+Wire Wire Line
+	4100 3250 4200 3250
+Connection ~ 4200 3250
+Wire Wire Line
+	4900 3250 5550 3250
+Wire Wire Line
+	3050 4550 5900 4550
+Wire Wire Line
+	2200 4150 4650 4150
+Wire Wire Line
+	2200 4250 5900 4250
+Wire Wire Line
+	2200 4350 5900 4350
+$Comp
+L RAMPS-FD-rescue:CONN_4 P?
+U 1 1 5CFE0692
+P 3750 5900
+AR Path="/5176EFAC/5CFE0692" Ref="P?"  Part="1" 
+AR Path="/50FC2853/5CFE0692" Ref="P7"  Part="1" 
+F 0 "P7" V 3700 5900 50  0000 C CNN
+F 1 "Pullup Sel." V 3800 5900 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3750 5900 60  0001 C CNN
+F 3 "" H 3750 5900 60  0001 C CNN
+	1    3750 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 6400 4050 6400
+Wire Wire Line
+	2250 6500 5200 6500
+Wire Wire Line
+	2250 6600 5200 6600
+Wire Wire Line
+	4200 5450 4850 5450
+Wire Wire Line
+	2250 6800 5200 6800
+Wire Wire Line
+	3900 5600 3900 5550
+Wire Wire Line
+	3900 5450 3900 5550
+Connection ~ 3900 5450
+Wire Wire Line
+	3900 5450 3800 5450
+Connection ~ 3900 5550
+Text Notes 8250 3150 0    60   ~ 0
+Use Jumpers to Connect the SPI Bus to your Stepperdrivers, \nfor example for TMC 2130, \nor to select the microstepping for your Pololu by connecting \nthe middle pin row to +V_Logic 
 $EndSCHEMATC

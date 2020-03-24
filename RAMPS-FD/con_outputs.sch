@@ -1,48 +1,16 @@
-EESchema Schematic File Version 2
-LIBS:RAMPS-FD-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:RMC
-LIBS:RAMPS-FD-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2016-07-17"
-Rev "v2.2"
+Date "2019-04-13"
+Rev "v2.3"
 Comp ""
-Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Bob Cousins 2016"
+Comment3 "Marius Krause 2019"
 Comment4 ""
 $EndDescr
 Connection ~ 3350 4300
@@ -152,7 +120,7 @@ D9 - Extruder 1
 Text Notes 650  2000 0    80   ~ 0
 D8 - Heatbed
 $Comp
-L GNDPWR #PWR095
+L RAMPS-FD-rescue:GNDPWR #PWR095
 U 1 1 51AA07E6
 P 9300 3000
 F 0 "#PWR095" H 9300 2800 50  0001 C CNN
@@ -163,7 +131,7 @@ F 3 "" H 9300 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR096
+L RAMPS-FD-rescue:GNDPWR #PWR096
 U 1 1 51AA0719
 P 9450 6350
 F 0 "#PWR096" H 9450 6150 50  0001 C CNN
@@ -174,7 +142,7 @@ F 3 "" H 9450 6300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR097
+L RAMPS-FD-rescue:GNDPWR #PWR097
 U 1 1 51AA06B9
 P 3350 6550
 F 0 "#PWR097" H 3350 6350 50  0001 C CNN
@@ -185,7 +153,7 @@ F 3 "" H 3350 6500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_2 P405
+L RAMPS-FD-rescue:CONN_2 P405
 U 1 1 51AA03B1
 P 10600 5300
 F 0 "P405" V 10550 5300 40  0000 C CNN
@@ -196,7 +164,7 @@ F 3 "" H 10600 5300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_2 P403
+L RAMPS-FD-rescue:CONN_2 P403
 U 1 1 51AA03AE
 P 4700 5250
 F 0 "P403" V 4650 5250 40  0000 C CNN
@@ -207,7 +175,7 @@ F 3 "" H 4700 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_2 P404
+L RAMPS-FD-rescue:CONN_2 P404
 U 1 1 51AA03A7
 P 4850 1950
 F 0 "P404" V 4800 1950 40  0000 C CNN
@@ -218,7 +186,7 @@ F 3 "" H 4850 1950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D404
+L RAMPS-FD-rescue:D D404
 U 1 1 51A9D334
 P 3650 1500
 F 0 "D404" H 3650 1600 40  0000 C CNN
@@ -229,7 +197,7 @@ F 3 "" H 3650 1500 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D403
+L RAMPS-FD-rescue:D D403
 U 1 1 519E92CD
 P 9600 1400
 F 0 "D403" H 9600 1500 40  0000 C CNN
@@ -240,7 +208,7 @@ F 3 "" H 9600 1400 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D401
+L RAMPS-FD-rescue:D D401
 U 1 1 519E9216
 P 3350 4800
 F 0 "D401" H 3350 4900 40  0000 C CNN
@@ -251,7 +219,7 @@ F 3 "" H 3350 4800 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D402
+L RAMPS-FD-rescue:D D402
 U 1 1 5186017E
 P 9450 4850
 F 0 "D402" H 9450 4950 40  0000 C CNN
@@ -262,7 +230,7 @@ F 3 "" H 9450 4850 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_2 P218
+L RAMPS-FD-rescue:CONN_2 P218
 U 1 1 51770F88
 P 10700 1850
 F 0 "P218" V 10650 1850 40  0000 C CNN
@@ -273,7 +241,7 @@ F 3 "" H 10700 1850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED-RESCUE-RAMPS-FD D204
+L RAMPS-FD-rescue:LED-RESCUE-RAMPS-FD D204
 U 1 1 51770EF9
 P 8900 1700
 AR Path="/51770EF9" Ref="D204"  Part="1" 
@@ -286,7 +254,7 @@ F 3 "" H 8900 1700 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R222
+L RAMPS-FD-rescue:R R222
 U 1 1 51770EF8
 P 8900 1150
 AR Path="/51770EF8" Ref="R222"  Part="1" 
@@ -301,7 +269,7 @@ $EndComp
 Text GLabel 7150 2300 0    60   Input ~ 0
 FET4_BUF
 $Comp
-L MOSFET_N_RMC Q206
+L RMC:MOSFET_N_RMC Q206
 U 1 1 51770EF3
 P 9250 2250
 F 0 "Q206" H 9125 2500 60  0000 C CNN
@@ -312,7 +280,7 @@ F 3 "" H 9250 2250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_POWER #PWR098
+L RMC:+V_POWER #PWR098
 U 1 1 51770EF2
 P 9600 650
 F 0 "#PWR098" H 9600 620 30  0001 C CNN
@@ -325,7 +293,7 @@ $EndComp
 Text Label 9950 1950 0    60   ~ 0
 FET4_OUT
 $Comp
-L MOSFET_N_RMC Q201
+L RMC:MOSFET_N_RMC Q201
 U 1 1 510E6DBE
 P 3250 2450
 F 0 "Q201" H 3125 2700 60  0000 C CNN
@@ -342,7 +310,7 @@ D9_OUT
 Text Label 4100 2050 0    60   ~ 0
 D8_OUT
 $Comp
-L +V_POWER #PWR099
+L RMC:+V_POWER #PWR099
 U 1 1 5176EF23
 P 3350 4150
 F 0 "#PWR099" H 3350 4120 30  0001 C CNN
@@ -353,7 +321,7 @@ F 3 "" H 3350 4150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_POWER #PWR0100
+L RMC:+V_POWER #PWR0100
 U 1 1 5176EE9D
 P 9450 4050
 F 0 "#PWR0100" H 9450 4020 30  0001 C CNN
@@ -364,7 +332,7 @@ F 3 "" H 9450 4050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_HEATBED #PWR0101
+L RMC:+V_HEATBED #PWR0101
 U 1 1 5176EDD7
 P 3650 700
 F 0 "#PWR0101" H 3650 670 30  0001 C CNN
@@ -375,7 +343,7 @@ F 3 "" H 3650 700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOSFET_N_RMC Q203
+L RMC:MOSFET_N_RMC Q203
 U 1 1 510E6E63
 P 3300 5750
 F 0 "Q203" H 3175 6000 60  0000 C CNN
@@ -386,7 +354,7 @@ F 3 "" H 3300 5750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOSFET_N_RMC Q202
+L RMC:MOSFET_N_RMC Q202
 U 1 1 510E6E60
 P 9400 5700
 F 0 "Q202" H 9275 5950 60  0000 C CNN
@@ -401,7 +369,7 @@ Non-inverting drivers
 Text Notes 5400 750  0    120  ~ 24
 MOSFET Outputs
 $Comp
-L LED-RESCUE-RAMPS-FD D203
+L RAMPS-FD-rescue:LED-RESCUE-RAMPS-FD D203
 U 1 1 51047AB7
 P 2850 5100
 AR Path="/51047AB7" Ref="D203"  Part="1" 
@@ -414,7 +382,7 @@ F 3 "" H 2850 5100 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R221
+L RAMPS-FD-rescue:R R221
 U 1 1 51047AB6
 P 2850 4600
 AR Path="/51047AB6" Ref="R221"  Part="1" 
@@ -431,7 +399,7 @@ D10_BUF
 Text GLabel 1100 5800 0    60   Input ~ 0
 D9_BUF
 $Comp
-L R R220
+L RAMPS-FD-rescue:R R220
 U 1 1 510479AF
 P 9000 4600
 AR Path="/510479AF" Ref="R220"  Part="1" 
@@ -444,7 +412,7 @@ F 3 "" H 9000 4600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED-RESCUE-RAMPS-FD D202
+L RAMPS-FD-rescue:LED-RESCUE-RAMPS-FD D202
 U 1 1 510479AE
 P 9000 5150
 AR Path="/510479AE" Ref="D202"  Part="1" 
@@ -457,7 +425,7 @@ F 3 "" H 9000 5150 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED-RESCUE-RAMPS-FD D201
+L RAMPS-FD-rescue:LED-RESCUE-RAMPS-FD D201
 U 1 1 510478C6
 P 2700 1800
 AR Path="/510478C6" Ref="D201"  Part="1" 
@@ -470,7 +438,7 @@ F 3 "" H 2700 1800 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R219
+L RAMPS-FD-rescue:R R219
 U 1 1 510478C3
 P 2700 1250
 AR Path="/510478C3" Ref="R219"  Part="1" 
@@ -491,7 +459,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 5800 1700 5800
 $Comp
-L GNDPWR #PWR0102
+L RAMPS-FD-rescue:GNDPWR #PWR0102
 U 1 1 5251556C
 P 3300 3050
 F 0 "#PWR0102" H 3300 2850 50  0001 C CNN
@@ -502,7 +470,7 @@ F 3 "" H 3300 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R701
+L RAMPS-FD-rescue:R R701
 U 1 1 52B221FB
 P 1800 2500
 AR Path="/52B221FB" Ref="R701"  Part="1" 
@@ -517,7 +485,7 @@ $EndComp
 Wire Wire Line
 	1050 2500 1650 2500
 $Comp
-L R R702
+L RAMPS-FD-rescue:R R702
 U 1 1 52B22B4E
 P 1850 5800
 AR Path="/52B22B4E" Ref="R702"  Part="1" 
@@ -530,7 +498,7 @@ F 3 "" H 1850 5800 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R704
+L RAMPS-FD-rescue:R R704
 U 1 1 52B22CEA
 P 8050 5750
 AR Path="/52B22CEA" Ref="R704"  Part="1" 
@@ -543,7 +511,7 @@ F 3 "" H 8050 5750 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R703
+L RAMPS-FD-rescue:R R703
 U 1 1 52B22C21
 P 7950 2300
 AR Path="/52B22C21" Ref="R703"  Part="1" 

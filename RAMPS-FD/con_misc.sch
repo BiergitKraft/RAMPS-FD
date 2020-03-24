@@ -1,48 +1,16 @@
-EESchema Schematic File Version 2
-LIBS:RAMPS-FD-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:RMC
-LIBS:RAMPS-FD-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2016-07-17"
-Rev "v2.2"
+Date "2019-04-13"
+Rev "v2.3"
 Comp ""
-Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Bob Cousins 2016"
+Comment3 "Marius Krause 2019"
 Comment4 ""
 $EndDescr
 Text GLabel 9400 2150 2    50   Input ~ 0
@@ -108,25 +76,25 @@ Connection ~ 4450 2500
 Wire Wire Line
 	4450 2150 4450 2500
 Wire Wire Line
-	4250 2400 5450 2400
+	4250 2400 4800 2400
 Connection ~ 4800 1650
 Wire Wire Line
 	4800 1850 4800 1650
 Wire Wire Line
-	4450 1650 5250 1650
+	4450 1650 4800 1650
 Wire Wire Line
 	5250 1650 5250 2200
 Wire Wire Line
 	5250 2200 5450 2200
 Wire Wire Line
-	4450 1600 4450 1850
+	4450 1600 4450 1650
 Connection ~ 4450 1650
 Wire Wire Line
 	5450 2300 5250 2300
 Wire Wire Line
 	5250 2300 5250 2600
 Wire Wire Line
-	4250 2500 5450 2500
+	4250 2500 4450 2500
 Wire Wire Line
 	1350 4400 1700 4400
 Wire Wire Line
@@ -212,25 +180,25 @@ Wire Wire Line
 Wire Wire Line
 	1950 2800 1950 3600
 Wire Wire Line
-	4250 4700 5450 4700
+	4250 4700 4450 4700
 Wire Wire Line
 	5250 4800 5250 4500
 Wire Wire Line
 	5250 4500 5450 4500
 Connection ~ 4450 3850
 Wire Wire Line
-	4450 3800 4450 4050
+	4450 3800 4450 3850
 Wire Wire Line
 	5450 4400 5250 4400
 Wire Wire Line
 	5250 4400 5250 3850
 Wire Wire Line
-	5250 3850 4450 3850
+	5250 3850 4800 3850
 Wire Wire Line
 	4800 4050 4800 3850
 Connection ~ 4800 3850
 Wire Wire Line
-	4250 4600 5450 4600
+	4250 4600 4800 4600
 Wire Wire Line
 	4450 4350 4450 4700
 Connection ~ 4450 4700
@@ -242,7 +210,7 @@ D50-MISO
 Text GLabel 8300 3700 0    50   BiDi ~ 0
 D52-SCK
 $Comp
-L CONN_4 P2
+L RAMPS-FD-rescue:CONN_4 P2
 U 1 1 523B6020
 P 5800 4550
 F 0 "P2" V 5750 4550 50  0000 C CNN
@@ -253,7 +221,7 @@ F 3 "" H 5800 4550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L RAMPS-FD-rescue:R R2
 U 1 1 523B601F
 P 4800 4200
 AR Path="/523B601F" Ref="R2"  Part="1" 
@@ -266,7 +234,7 @@ F 3 "" H 4800 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L RAMPS-FD-rescue:R R1
 U 1 1 523B601E
 P 4450 4200
 AR Path="/523B601E" Ref="R1"  Part="1" 
@@ -279,7 +247,7 @@ F 3 "" H 4450 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR071
+L power:GND #PWR071
 U 1 1 523B601D
 P 5250 4800
 AR Path="/523B601D" Ref="#PWR071"  Part="1" 
@@ -296,7 +264,7 @@ SDA1
 Text GLabel 4250 4700 0    60   Input ~ 0
 SCL1
 $Comp
-L +V_LOGIC #PWR071
+L RMC:+V_LOGIC #PWR071
 U 1 1 523B601C
 P 4450 3800
 F 0 "#PWR071" H 4450 3770 30  0001 C CNN
@@ -311,7 +279,7 @@ UART1_RX_LV
 Text GLabel 1850 3200 0    50   Input ~ 0
 UART1_TX_LV
 $Comp
-L GND #PWR073
+L power:GND #PWR073
 U 1 1 523B5AB9
 P 1950 3600
 AR Path="/523B5AB9" Ref="#PWR073"  Part="1" 
@@ -324,7 +292,7 @@ F 3 "" H 1950 3600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_6 P1
+L RAMPS-FD-rescue:CONN_6 P1
 U 1 1 523B5AB8
 P 2800 3050
 F 0 "P1" V 2750 3050 60  0000 C CNN
@@ -343,7 +311,7 @@ NoConn ~ 2450 2050
 NoConn ~ 2450 1750
 NoConn ~ 2450 1650
 $Comp
-L CONN_6 P216
+L RAMPS-FD-rescue:CONN_6 P216
 U 1 1 51F17B03
 P 2800 1800
 F 0 "P216" V 2750 1800 60  0000 C CNN
@@ -366,7 +334,7 @@ A4
 Text GLabel 9450 3600 2    50   BiDi ~ 0
 D51-MOSI
 $Comp
-L +V_LOGIC #PWR073
+L RMC:+V_LOGIC #PWR073
 U 1 1 517867DD
 P 7950 1750
 F 0 "#PWR073" H 7950 1720 30  0001 C CNN
@@ -377,7 +345,7 @@ F 3 "" H 7950 1750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR074
+L RMC:+V_LOGIC #PWR074
 U 1 1 517867D0
 P 8250 6475
 F 0 "#PWR074" H 8250 6445 30  0001 C CNN
@@ -388,7 +356,7 @@ F 3 "" H 8250 6475 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR075
+L RMC:+V_LOGIC #PWR075
 U 1 1 517867C6
 P 4450 1600
 F 0 "#PWR075" H 4450 1570 30  0001 C CNN
@@ -399,7 +367,7 @@ F 3 "" H 4450 1600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR077
+L power:GND #PWR077
 U 1 1 51084B2C
 P 9100 6425
 AR Path="/51084B2C" Ref="#PWR077"  Part="1" 
@@ -438,7 +406,7 @@ D25
 Text GLabel 8950 4975 0    50   BiDi ~ 0
 D23
 $Comp
-L CONN_18 P213
+L RMC:CONN_18 P213
 U 1 1 51084A74
 P 9700 5575
 F 0 "P213" V 9650 5575 60  0000 C CNN
@@ -461,7 +429,7 @@ Need buffered outputs?
 Text Notes 4000 3200 0    50   ~ 0
 Must not have external pullups to 5V if IOREF = 3.3V
 $Comp
-L GND #PWR078
+L power:GND #PWR078
 U 1 1 5104884C
 P 7550 3600
 AR Path="/5104884C" Ref="#PWR078"  Part="1" 
@@ -474,7 +442,7 @@ F 3 "" H 7550 3600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR079
+L power:GND #PWR079
 U 1 1 51048839
 P 10000 1900
 AR Path="/51048839" Ref="#PWR079"  Part="1" 
@@ -487,7 +455,7 @@ F 3 "" H 10000 1900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR080
+L power:GND #PWR080
 U 1 1 5104861F
 P 1950 2350
 AR Path="/5104861F" Ref="#PWR080"  Part="1" 
@@ -516,7 +484,7 @@ Aux connectors
 Text Notes 1350 7300 0    60   ~ 0
 Servos
 $Comp
-L CONN_5X2 P214
+L RAMPS-FD-rescue:CONN_5X2 P214
 U 1 1 510481EC
 P 8850 2050
 F 0 "P214" H 8850 2350 60  0000 C CNN
@@ -527,7 +495,7 @@ F 3 "" H 8850 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_3 K204
+L RAMPS-FD-rescue:CONN_3 K204
 U 1 1 51047C7F
 P 2050 6650
 F 0 "K204" V 2000 6650 50  0000 C CNN
@@ -538,7 +506,7 @@ F 3 "" H 2050 6650 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR081
+L power:GND #PWR081
 U 1 1 51047C7E
 P 1550 6850
 AR Path="/51047C7E" Ref="#PWR081"  Part="1" 
@@ -551,7 +519,7 @@ F 3 "" H 1550 6850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR081
+L power:+5V #PWR081
 U 1 1 51047C7D
 P 1550 6450
 F 0 "#PWR081" H 1550 6300 50  0001 C CNN
@@ -566,7 +534,7 @@ SERVO4
 Text GLabel 1350 5800 0    60   Input ~ 0
 SERVO3
 $Comp
-L +5V #PWR082
+L power:+5V #PWR082
 U 1 1 51047C7B
 P 1550 5700
 F 0 "#PWR082" H 1550 5550 50  0001 C CNN
@@ -577,7 +545,7 @@ F 3 "" H 1550 5700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR084
+L power:GND #PWR084
 U 1 1 51047C7A
 P 1550 6100
 AR Path="/51047C7A" Ref="#PWR084"  Part="1" 
@@ -590,7 +558,7 @@ F 3 "" H 1550 6100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_3 K203
+L RAMPS-FD-rescue:CONN_3 K203
 U 1 1 51047C79
 P 2050 5900
 F 0 "K203" V 2000 5900 50  0000 C CNN
@@ -601,7 +569,7 @@ F 3 "" H 2050 5900 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L CONN_3 K202
+L RAMPS-FD-rescue:CONN_3 K202
 U 1 1 51047C78
 P 2050 5250
 F 0 "K202" V 2000 5250 50  0000 C CNN
@@ -612,7 +580,7 @@ F 3 "" H 2050 5250 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR085
+L power:GND #PWR085
 U 1 1 51047C77
 P 1550 5450
 AR Path="/51047C77" Ref="#PWR085"  Part="1" 
@@ -625,7 +593,7 @@ F 3 "" H 1550 5450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR085
+L power:+5V #PWR085
 U 1 1 51047C76
 P 1550 5050
 F 0 "#PWR085" H 1550 4900 50  0001 C CNN
@@ -640,7 +608,7 @@ SERVO2
 Text GLabel 1350 4400 0    60   Input ~ 0
 SERVO1
 $Comp
-L +5V #PWR086
+L power:+5V #PWR086
 U 1 1 51047C09
 P 1550 4300
 F 0 "#PWR086" H 1550 4150 50  0001 C CNN
@@ -651,7 +619,7 @@ F 3 "" H 1550 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR088
+L power:GND #PWR088
 U 1 1 51047C01
 P 1550 4700
 AR Path="/51047C01" Ref="#PWR088"  Part="1" 
@@ -664,7 +632,7 @@ F 3 "" H 1550 4700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_3 K201
+L RAMPS-FD-rescue:CONN_3 K201
 U 1 1 51047BDF
 P 2050 4500
 F 0 "K201" V 2000 4500 50  0000 C CNN
@@ -681,7 +649,7 @@ SCL
 Text GLabel 4250 2400 0    60   Input ~ 0
 SDA
 $Comp
-L GND #PWR089
+L power:GND #PWR089
 U 1 1 51047413
 P 5250 2600
 AR Path="/51047413" Ref="#PWR089"  Part="1" 
@@ -694,7 +662,7 @@ F 3 "" H 5250 2600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R211
+L RAMPS-FD-rescue:R R211
 U 1 1 510473D0
 P 4450 2000
 AR Path="/510473D0" Ref="R211"  Part="1" 
@@ -707,7 +675,7 @@ F 3 "" H 4450 2000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R212
+L RAMPS-FD-rescue:R R212
 U 1 1 510473CD
 P 4800 2000
 AR Path="/510473CD" Ref="R212"  Part="1" 
@@ -720,7 +688,7 @@ F 3 "" H 4800 2000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_4 P211
+L RAMPS-FD-rescue:CONN_4 P211
 U 1 1 51047175
 P 5800 2350
 F 0 "P211" V 5750 2350 50  0000 C CNN
@@ -761,7 +729,7 @@ D32
 Wire Notes Line
 	9400 5725 8050 5725
 $Comp
-L +5V #PWR089
+L power:+5V #PWR089
 U 1 1 52421C84
 P 7950 3100
 F 0 "#PWR089" H 7950 2950 50  0001 C CNN
@@ -787,7 +755,7 @@ Wire Notes Line
 	8250 6275 8300 6275
 NoConn ~ 9250 3500
 $Comp
-L CONN_6X2 P215
+L RAMPS-FD-rescue:CONN_6X2 P215
 U 1 1 52475600
 P 8850 3450
 F 0 "P215" H 8850 3800 60  0000 C CNN
@@ -798,7 +766,7 @@ F 3 "" H 8850 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +V_LOGIC #PWR090
+L RMC:+V_LOGIC #PWR090
 U 1 1 52475621
 P 10250 3650
 F 0 "#PWR090" H 10250 3620 30  0001 C CNN
@@ -835,9 +803,11 @@ Wire Notes Line
 Text Notes 10100 3150 0    60   ~ 0
 Note: Some addon boards \nconnect this pin to GND.
 $Comp
-L 24C512 U601
+L RAMPS-FD-rescue:24C512 U601
 U 1 1 52B23647
 P 4400 6250
+AR Path="/52B23647" Ref="U601"  Part="1" 
+AR Path="/5176EFAC/52B23647" Ref="U601"  Part="1" 
 F 0 "U601" H 4550 6600 60  0000 C CNN
 F 1 "24C512" H 4600 5900 60  0000 C CNN
 F 2 "libcms:SO8E" H 4400 6250 60  0001 C CNN
@@ -846,7 +816,7 @@ F 3 "" H 4400 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR092
+L power:GND #PWR092
 U 1 1 52B23654
 P 4400 6900
 AR Path="/52B23654" Ref="#PWR092"  Part="1" 
@@ -859,13 +829,13 @@ F 3 "" H 4400 6900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 6750 4400 6900
+	4400 6750 4400 6800
 Wire Wire Line
 	3650 6250 3700 6250
 Wire Wire Line
-	3650 6050 3650 6800
+	3650 6050 3650 6150
 Wire Wire Line
-	3650 6800 5200 6800
+	3650 6800 4400 6800
 Connection ~ 4400 6800
 Wire Wire Line
 	3650 6150 3700 6150
@@ -874,7 +844,7 @@ Wire Wire Line
 	3700 6050 3650 6050
 Connection ~ 3650 6150
 $Comp
-L +V_LOGIC #PWR092
+L RMC:+V_LOGIC #PWR092
 U 1 1 52B2384C
 P 4400 5600
 F 0 "#PWR092" H 4400 5570 30  0001 C CNN
@@ -901,7 +871,7 @@ Wire Wire Line
 Text Notes 4200 7350 0    60   ~ 0
 EEPROM
 $Comp
-L C C601
+L RAMPS-FD-rescue:C C601
 U 1 1 52B22339
 P 6050 6250
 AR Path="/52B22339" Ref="C601"  Part="1" 
@@ -914,7 +884,7 @@ F 3 "~" H 6050 6250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR094
+L power:GND #PWR094
 U 1 1 52B22346
 P 6050 6600
 AR Path="/52B22346" Ref="#PWR094"  Part="1" 
@@ -929,7 +899,7 @@ $EndComp
 Wire Wire Line
 	6050 6400 6050 6600
 $Comp
-L +V_LOGIC #PWR094
+L RMC:+V_LOGIC #PWR094
 U 1 1 52B2234D
 P 6050 5900
 F 0 "#PWR094" H 6050 5870 30  0001 C CNN
@@ -945,4 +915,28 @@ Text Notes 2900 5800 0    60   Italic 0
 Might want to \nallow other addresses
 Wire Notes Line
 	9250 3550 8450 3550
+Wire Wire Line
+	4800 2400 5450 2400
+Wire Wire Line
+	4450 2500 5450 2500
+Wire Wire Line
+	4800 1650 5250 1650
+Wire Wire Line
+	4450 1650 4450 1850
+Wire Wire Line
+	4450 3850 4450 4050
+Wire Wire Line
+	4800 3850 4450 3850
+Wire Wire Line
+	4450 4700 5450 4700
+Wire Wire Line
+	4800 4600 5450 4600
+Wire Wire Line
+	4400 6800 4400 6900
+Wire Wire Line
+	4400 6800 5200 6800
+Wire Wire Line
+	3650 6250 3650 6800
+Wire Wire Line
+	3650 6150 3650 6250
 $EndSCHEMATC

@@ -1,48 +1,16 @@
-EESchema Schematic File Version 2
-LIBS:RAMPS-FD-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:RMC
-LIBS:RAMPS-FD-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2016-07-17"
-Rev "v2.2"
+Date "2019-04-13"
+Rev "v2.3"
 Comp ""
-Comment1 "Derived from RAMPS 1.4 reprap.org/wiki/RAMPS1.4"
+Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Bob Cousins 2016"
+Comment3 "Marius Krause 2019"
 Comment4 ""
 $EndDescr
 Text GLabel 900  4050 0    50   Input ~ 0
@@ -96,7 +64,7 @@ $EndSheet
 Text Notes 500  3150 0    50   ~ 0
 X/Y/Z pins are\non single port for both\nMega and Due
 $Comp
-L ARDUINO_DUE_SHIELD SHIELD101
+L RMC:ARDUINO_DUE_SHIELD SHIELD101
 U 1 1 50FC245D
 P 3200 3800
 F 0 "SHIELD101" H 2800 6650 60  0000 C CNN
@@ -137,7 +105,7 @@ $EndSheet
 Text GLabel 4750 1850 2    50   Output ~ 0
 D11-FET4
 $Comp
-L LOGO_OSHW M101
+L RMC:LOGO_OSHW M101
 U 1 1 510E82F9
 P 6100 7200
 F 0 "M101" H 6100 7350 60  0000 C CNN
@@ -148,16 +116,6 @@ F 4 "No" H 6100 7200 60  0001 C CNN "Populate"
 	1    6100 7200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4350 4800 2    50   BiDi ~ 0
-D23
-Text GLabel 4350 5000 2    50   BiDi ~ 0
-D25
-Text GLabel 4350 5200 2    50   BiDi ~ 0
-D27
-Text GLabel 4350 5400 2    50   BiDi ~ 0
-D29
-Text GLabel 4350 5650 2    50   BiDi ~ 0
-D31
 Text GLabel 4350 5850 2    50   BiDi ~ 0
 D33
 Text GLabel 4350 6050 2    50   BiDi ~ 0
@@ -180,7 +138,7 @@ Text GLabel 1800 3050 0    50   Input ~ 0
 A5
 NoConn ~ 2200 6550
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 51084806
 P 2200 6800
 F 0 "#PWR01" H 2200 6800 30  0001 C CNN
@@ -249,7 +207,7 @@ Z_STEP
 Text GLabel 1450 3850 0    50   Output ~ 0
 Z_DIR
 $Comp
-L PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG02
 U 1 1 50FC2FBB
 P 1350 1950
 F 0 "#FLG02" H 1350 2045 30  0001 C CNN
@@ -296,7 +254,7 @@ Reset
 Text Notes 7700 6350 0    60   ~ 0
 Status LED
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 50FC2571
 P 9500 5800
 F 0 "#PWR03" H 9500 5800 30  0001 C CNN
@@ -307,7 +265,7 @@ F 3 "" H 9500 5800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW101
+L RAMPS-FD-rescue:SW_PUSH SW101
 U 1 1 50FC254D
 P 9500 5100
 F 0 "SW101" H 9500 5250 50  0000 C CNN
@@ -322,7 +280,7 @@ RESET
 Text Label 1850 1850 0    60   ~ 0
 RESET
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 50FC24E2
 P 7950 5975
 F 0 "#PWR04" H 7950 5975 30  0001 C CNN
@@ -333,7 +291,7 @@ F 3 "" H 7950 5975 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED-RESCUE-RAMPS-FD D101
+L RAMPS-FD-rescue:LED-RESCUE-RAMPS-FD D101
 U 1 1 50FC24D8
 P 7950 4450
 F 0 "D101" H 7950 4550 50  0000 C CNN
@@ -344,7 +302,7 @@ F 3 "" H 7950 4450 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R101
+L RAMPS-FD-rescue:R R101
 U 1 1 50FC24CE
 P 7950 5000
 F 0 "R101" V 8050 5000 50  0000 C CNN
@@ -355,7 +313,7 @@ F 3 "" H 7950 5000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR05
+L power:+3.3V #PWR05
 U 1 1 50FC1A82
 P 1550 1700
 F 0 "#PWR05" H 1550 1660 30  0001 C CNN
@@ -366,7 +324,7 @@ F 3 "" H 1550 1700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 50FC1A69
 P 1400 2200
 F 0 "#PWR06" H 1400 2200 30  0001 C CNN
@@ -401,7 +359,7 @@ D32
 Text GLabel 4750 1650 2    50   Output ~ 0
 D13
 $Comp
-L CONN_2 P102
+L RAMPS-FD-rescue:CONN_2 P102
 U 1 1 52475D81
 P 10350 5100
 F 0 "P102" V 10300 5100 40  0000 C CNN
@@ -423,7 +381,7 @@ NoConn ~ 2200 6450
 NoConn ~ 4100 4400
 NoConn ~ 4100 4500
 $Comp
-L GNDA #PWR07
+L power:GNDA #PWR07
 U 1 1 52CCBE6D
 P 1850 4550
 F 0 "#PWR07" H 1850 4300 50  0001 C CNN
@@ -434,7 +392,7 @@ F 3 "" H 1850 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG08
+L power:PWR_FLAG #FLG08
 U 1 1 52CCBF6C
 P 1650 4400
 F 0 "#FLG08" H 1650 4495 30  0001 C CNN
@@ -445,7 +403,7 @@ F 3 "" H 1650 4400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR09
+L power:+5V #PWR09
 U 1 1 52D057D7
 P 7950 4050
 F 0 "#PWR09" H 7950 3900 50  0001 C CNN
@@ -456,7 +414,7 @@ F 3 "" H 7950 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MOSFET_N Q101
+L RMC:MOSFET_N Q101
 U 1 1 52D0586E
 P 7875 5550
 F 0 "Q101" H 7875 5750 60  0000 R CNN
@@ -483,14 +441,6 @@ Wire Wire Line
 	1000 5800 2200 5800
 Wire Wire Line
 	4100 6250 4350 6250
-Wire Wire Line
-	4100 5850 4350 5850
-Wire Wire Line
-	4100 5650 4350 5650
-Wire Wire Line
-	4100 5200 4350 5200
-Wire Wire Line
-	4100 4800 4350 4800
 Wire Wire Line
 	1000 5950 2200 5950
 Wire Wire Line
@@ -528,7 +478,7 @@ Wire Notes Line
 Wire Wire Line
 	1000 5400 2200 5400
 Wire Wire Line
-	1350 1950 2200 1950
+	1350 1950 1550 1950
 Wire Wire Line
 	4100 6150 5200 6150
 Wire Wire Line
@@ -546,7 +496,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 2550 1450 2550
 Wire Wire Line
-	9500 5400 9500 5800
+	9500 5400 9500 5700
 Wire Wire Line
 	7100 5625 7575 5625
 Wire Wire Line
@@ -627,10 +577,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 6150 2200 6150
 Wire Wire Line
-	4100 5000 4350 5000
-Wire Wire Line
-	4100 5400 4350 5400
-Wire Wire Line
 	4100 5750 5200 5750
 Wire Wire Line
 	4350 6050 4100 6050
@@ -639,7 +585,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 6050 2200 6050
 Wire Wire Line
-	9150 4600 9950 4600
+	9150 4600 9500 4600
 Wire Wire Line
 	9500 4600 9500 4800
 Wire Wire Line
@@ -687,9 +633,9 @@ Wire Wire Line
 Wire Wire Line
 	2200 4500 1850 4500
 Wire Wire Line
-	1850 4400 1850 4550
+	1850 4400 1850 4500
 Wire Wire Line
-	1650 4400 2200 4400
+	1650 4400 1850 4400
 Connection ~ 1850 4500
 Connection ~ 1850 4400
 Wire Wire Line
@@ -701,7 +647,7 @@ D13
 Text Notes 5250 1650 0    60   ~ 0
 LED
 $Comp
-L Fiducial FID2
+L RMC:Fiducial FID2
 U 1 1 5725214B
 P 10375 3975
 F 0 "FID2" H 10375 3775 60  0000 C CNN
@@ -713,7 +659,7 @@ F 4 "No" H 10375 3975 60  0001 C CNN "Populate"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fiducial FID3
+L RMC:Fiducial FID3
 U 1 1 572521B8
 P 10775 3975
 F 0 "FID3" H 10775 3775 60  0000 C CNN
@@ -725,7 +671,7 @@ F 4 "No" H 10775 3975 60  0001 C CNN "Populate"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Fiducial FID1
+L RMC:Fiducial FID1
 U 1 1 57252215
 P 10000 3975
 F 0 "FID1" H 10000 3775 60  0000 C CNN
@@ -736,39 +682,48 @@ F 4 "No" H 10000 3975 60  0001 C CNN "Populate"
 	1    10000 3975
 	1    0    0    -1  
 $EndComp
-Text GLabel 4800 7200 2    50   Output ~ 0
+Text GLabel 1850 3250 2    50   Output ~ 0
 STEP_Y_CS
-$Comp
-L CONN_02X06 J2
-U 1 1 5B124015
-P 4550 7350
-F 0 "J2" H 4550 7700 50  0000 C CNN
-F 1 "CONN_02X06" H 4550 7000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x06_Pitch2.54mm" H 4550 6150 50  0001 C CNN
-F 3 "" H 4550 6150 50  0001 C CNN
-	1    4550 7350
-	1    0    0    -1  
-$EndComp
-Text GLabel 4800 7100 2    50   Output ~ 0
+Text GLabel 1000 4150 2    50   Output ~ 0
 STEP_X_CS
-Text GLabel 4800 7300 2    50   Output ~ 0
+Text GLabel 1850 3150 2    50   Output ~ 0
 STEP_Z_CS
-Text GLabel 4800 7400 2    50   Output ~ 0
+Text GLabel 1850 2950 2    50   Output ~ 0
 STEP_E0_CS
-Text GLabel 4800 7500 2    50   Output ~ 0
+Text GLabel 1850 3050 2    50   Output ~ 0
 STEP_E1_CS
-Text GLabel 4800 7600 2    50   Output ~ 0
+Text GLabel 1000 4050 2    50   Output ~ 0
 STEP_E2_CS
-Text GLabel 4300 7600 0    50   BiDi ~ 0
-D33
-Text GLabel 4300 7500 0    50   BiDi ~ 0
+Wire Wire Line
+	1550 1950 2200 1950
+Wire Wire Line
+	9500 4600 9950 4600
+Wire Wire Line
+	9500 5700 9500 5800
+Wire Wire Line
+	1850 4500 1850 4550
+Wire Wire Line
+	1850 4400 2200 4400
+Text GLabel 4350 5650 2    50   BiDi ~ 0
 D31
-Text GLabel 4300 7400 0    50   BiDi ~ 0
+Text GLabel 4350 5400 2    50   BiDi ~ 0
 D29
-Text GLabel 4300 7300 0    50   BiDi ~ 0
+Text GLabel 4350 5200 2    50   BiDi ~ 0
 D27
-Text GLabel 4300 7200 0    50   BiDi ~ 0
+Text GLabel 4350 5000 2    50   BiDi ~ 0
 D25
-Text GLabel 4300 7100 0    50   BiDi ~ 0
+Text GLabel 4350 4800 2    50   BiDi ~ 0
 D23
+Wire Wire Line
+	4100 4800 4750 4800
+Wire Wire Line
+	4100 5000 4750 5000
+Wire Wire Line
+	4100 5200 4750 5200
+Wire Wire Line
+	4100 5400 4750 5400
+Wire Wire Line
+	4100 5650 4750 5650
+Wire Wire Line
+	4100 5850 4750 5850
 $EndSCHEMATC

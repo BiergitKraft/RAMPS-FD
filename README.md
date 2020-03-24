@@ -2,12 +2,12 @@
 
 RAMPS for Due.
 
-THIS IS THE DEVELOPMENT BRANCH.
-
-Design files in the development branch are untested and not ready for manufacturing.
+A RAMPS style Shield for Arduino Due to benefit from the 32bit uC combined with the modular Design of a RAMPS Board.
+V2.3 adds SPI support by simply selecting it with a few jumpers.
+V3.0 adds UART support. WIP
 
 Status
 -------
 
-Nothing is ready for release yet!
-
+V2.3 tested and fuctional.
+V3.0 WIP
