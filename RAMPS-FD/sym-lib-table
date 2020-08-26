@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name RAMPS-FD-rescue)(type Legacy)(uri ${KIPRJMOD}/RAMPS-FD-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name RMC)(type Legacy)(uri ${KIPRJMOD}/library/RMC.lib)(options "")(descr "")(disabled))
+  (lib (name RAMPS-FD)(type Legacy)(uri ${KIPRJMOD}/library/RAMPS-FD.lib)(options "")(descr ""))
+)

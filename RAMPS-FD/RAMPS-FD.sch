@@ -5,12 +5,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
 Title "RAMPS-FD (RAMPS for Arduino Due)"
-Date "2019-04-13"
-Rev "v2.3"
+Date "2020-06-13"
+Rev "v3.0"
 Comp ""
 Comment1 "Derived from RAMPS FD 2.2 by Bob Cousins github.com/bobc/bobc_hardware/"
 Comment2 "GPL v3"
-Comment3 "Marius Krause 2019"
+Comment3 "Marius Krause 2020"
 Comment4 ""
 $EndDescr
 Text GLabel 900  4050 0    50   Input ~ 0

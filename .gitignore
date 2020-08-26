@@ -1,0 +1,8 @@
+*.sch-bak
+*.bak
+*kicad_pcb-bak
+rescue-backup/
+RAMPS-FD-cache.lib
+fp-info-cache
+*.net
+*.bck

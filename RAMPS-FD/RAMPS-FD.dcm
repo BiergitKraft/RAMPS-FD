@@ -1,0 +1,233 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 100k
+D R0603_100k
+K R 0603 100k
+$ENDCMP
+#
+$CMP 100n
+D C0603_100n
+K C0603 100n
+$ENDCMP
+#
+$CMP 100u_35V
+D 100uF 35V Elko SMD 6,3x7,7mm
+K 100uF 35V Elko SMD 6,3 7,7mm
+$ENDCMP
+#
+$CMP 10k
+D R0603_10k
+K R 0603 10k
+$ENDCMP
+#
+$CMP 10kArrayx4
+D 10k 0603 x4 Array
+K 10k 0603  Array
+$ENDCMP
+#
+$CMP 10u
+D C0603_10u
+K C0603 10u
+$ENDCMP
+#
+$CMP 1k
+D R0603_1k0
+K R 0603 1k0
+$ENDCMP
+#
+$CMP 1x2JumperArray
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP 24C512
+D Non-Volatile 512Kb (64K x 8) I2C EEPROM
+K EEPROM
+$ENDCMP
+#
+$CMP 2CZ4007
+D 1kV 1A General Purpose Diode, SOD-123
+K diode
+F https://datasheet.lcsc.com/szlcsc/1809132226_Changjiang-Electronics-Tech-CJ-2CZ4007_C85712.pdf
+$ENDCMP
+#
+$CMP 2_PinScrewPlugableTerminal_P508
+D 2 Circuit Screw Terminal P5.08
+K Screw Terminal P5.08
+$ENDCMP
+#
+$CMP 2_PinScrewTerminal_P350
+D 2 Circuit Screw Terminal P3.50
+K Screw Terminal P3.50
+$ENDCMP
+#
+$CMP 2_PinScrewTerminal_P508
+D 2 Circuit Screw Terminal P5.08
+K Screw Terminal P5.08
+$ENDCMP
+#
+$CMP 2x4PinHeader_2.54mm
+D 2x4 Pin Header 2.54mm
+K 2x4 Pin Header 2.54
+$ENDCMP
+#
+$CMP 330R
+D R0603_330R
+K R 0603 330R
+$ENDCMP
+#
+$CMP 33R
+D R0603_33R
+K R 0603 33R
+$ENDCMP
+#
+$CMP 33V
+D R0603_33V
+K R 0603 33V Varistor
+$ENDCMP
+#
+$CMP 470R
+D R0603_470R
+K R 0603 470R
+$ENDCMP
+#
+$CMP 4_PinScrewPlugableTerminal_P508
+D 2 Circuit Screw Terminal P5.08
+K Screw Terminal P5.08
+$ENDCMP
+#
+$CMP 4k7
+D R0603_4k7
+K R 0603 4k7
+$ENDCMP
+#
+$CMP 6_PinScrewPlugableTerminal_P508
+D 6 Circuit Screw Terminal P5.08
+K Screw Terminal P5.08
+$ENDCMP
+#
+$CMP AP40N03GP
+D N Channel Power MOSFET
+K N Channel MOSFET Power
+F https://datasheet.lcsc.com/szlcsc/1809131516_APEC-Advanced-Power-Elec-AP40N03GP_C124522.pdf
+$ENDCMP
+#
+$CMP ARDUINO_DUE_SHIELD
+K Arduino Due Shield
+$ENDCMP
+#
+$CMP AS7812ADTR
+D Fixed 32V 12V 1A TO-252-2(DPAK) Linear Voltage Regulator
+K Linear Voltage Regulator
+$ENDCMP
+#
+$CMP DS110W
+D Schottky Barrier Diode
+K Schottky
+F https://datasheet.lcsc.com/szlcsc/1805300419_Shandong-Jingdao-Microelectronics-DS110W_C123900.pdf
+$ENDCMP
+#
+$CMP FB0603
+D Ferrite Bed 0603
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
+$CMP FUSE_750mA_0603
+D SMD Fuse 750mA Fast
+K FUSE 750mA 0603
+$ENDCMP
+#
+$CMP FUSE_800mA
+D SMD Fuse 800mA
+K FUSE 800mA
+$ENDCMP
+#
+$CMP KDZVTR11B
+D Zener diode
+K diode Zener
+$ENDCMP
+#
+$CMP Keystone_3568
+D Blade Fuse Holder for Car Fuses
+K  FUSE HOLDER BLADE 500V 30A PCB
+$ENDCMP
+#
+$CMP LED_0603_GREEN
+D 530nm GREEN-LED, 0603
+K GREEN LED
+F https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2G-A5_C192316.pdf
+$ENDCMP
+#
+$CMP LED_0603_RED
+D 625nm RED-LED, 0603
+K RED LED
+F https://datasheet.lcsc.com/szlcsc/1811141223_TOGIALED-TJ-S1608SW6TGLC2R-A5_C192315.pdf
+$ENDCMP
+#
+$CMP MC74LCX07
+D Low Voltage Hex Buffer with Open Drain Outputs
+K Buffer Hex Open Drain
+F https://www.onsemi.com/pub/Collateral/MC74LCX07-D.PDF
+$ENDCMP
+#
+$CMP MRA4003T3G
+D 300V 1A General Purpose Diode, SMA
+K diode general purpose
+F https://www.onsemi.com/pub/Collateral/MRA4003T3-D.PDF
+$ENDCMP
+#
+$CMP NCE3416
+D N Channel MOSFET
+K N Channel MOSFET
+F https://datasheet.lcsc.com/szlcsc/1811071721_Wuxi-NCE-Power-Semiconductor-NCE3416_C113491.pdf
+$ENDCMP
+#
+$CMP PSMN1R8-40YLC
+D N Channel Power MOSFET
+K N Channel MOSFET Power
+F https://assets.nexperia.com/documents/data-sheet/PSMN1R8-40YLC.pdf
+$ENDCMP
+#
+$CMP PSMN7R5-60YLX
+D N Channel Power MOSFET
+K N Channel MOSFET Power
+F https://assets.nexperia.com/documents/data-sheet/PSMN1R8-40YLC.pdf
+$ENDCMP
+#
+$CMP Pololu
+D Header for Motor Driver
+K Pololu
+$ENDCMP
+#
+$CMP SMF36CA
+D TVS diode
+K diode Zener
+$ENDCMP
+#
+$CMP SN74LV1T125
+D Single Power Supply Single Buffer Gate
+K Buffer Level Shifter
+F https://www.ti.com/lit/ds/symlink/sn74lv1t125.pdf
+$ENDCMP
+#
+$CMP SVT15100LB
+D Schottky Barrier Diode
+K Schottky
+F https://datasheet.lcsc.com/szlcsc/1811021411_PANJIT-International-SVT15100LB-R2-00001_C305166.pdf
+$ENDCMP
+#
+$CMP TDM3415
+D -17A Id, -30V Vds, P-Channel MOSFET, SO 8
+K P-Channel MOSFET
+F https://datasheet.lcsc.com/szlcsc/1912111437_APEC-Advanced-Power-Elec-AP4439GM_C429862.pdf
+$ENDCMP
+#
+$CMP V10P10-M3_86A
+D Schottky Barrier Diode
+K Schottky
+F https://datasheet.lcsc.com/szlcsc/1810311908_Vishay-Intertech-V10P10-M3-86A_C50188.pdf
+$ENDCMP
+#
+#End Doc Library
