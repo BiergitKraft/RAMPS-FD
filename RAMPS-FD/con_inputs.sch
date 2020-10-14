@@ -414,4 +414,6 @@ Wire Wire Line
 	1750 4050 1750 3100
 Wire Wire Line
 	1750 2700 1900 2700
+Text Notes 1050 3450 0    60   ~ 0
+!BUG in V3!\nGND and Signal swaped at J29! \nAdapter needed
 $EndSCHEMATC
